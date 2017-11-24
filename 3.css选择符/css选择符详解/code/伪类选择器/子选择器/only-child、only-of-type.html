@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*选择的是div中独生子的p标签*/
+			/*也就是说,要求p标签没有任何兄弟元素*/
+			p:only-child{
+				color: peru;
+			}
+			
+			/*如果div中只有一个p标签,就选中这个p标签*/
+			/*p标签可以有兄弟元素,但是如果找父级元素中的p标签,只有他一个*/
+			span:only-of-type{
+				background: palegreen;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p>:only-child选择器匹配属于父元素中唯一子元素的元素。</p>
+		</div>
+		<div>
+			<p>!!!!!</p>
+			<p>!!!!!</p>
+		</div>
+		<div>
+			<span>:only-of-type选择器匹配属于同类型中唯一同级元素。</span>
+			<p>p</p>
+		</div>
+	</body>
+</html>

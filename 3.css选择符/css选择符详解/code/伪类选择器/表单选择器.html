@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*获得焦点的input元素（该元素的onfocus事件发生）*/
+			/*input:focus{
+				background: cornflowerblue;
+			}*/
+			
+			/*选择所有启用的、可用的表单元素*/
+			/*input:enabled{
+				background: greenyellow;
+			}*/
+			
+			/*选择每个禁用的input元素*/
+			input:disabled{
+				background: burlywood;
+			}
+			
+			/*选择每个被选中的input元素(单选和多选)*/
+			input:checked{
+				width:50px;
+				height: 100px;
+			}
+			
+			/*设置对象文字占位符的样式。*/
+			input::-moz-placeholder{
+				color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="checkbox" />
+		<input type="checkbox" />
+		<input type="checkbox" checked/>
+		<input type="checkbox" />
+		<input type="text" placeholder="damn"/>
+		<input type="text" />
+		<input type="text" disabled/>
+		
+	</body>
+</html>

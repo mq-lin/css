@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div p{}
+			div>p{}
+			div+p{}
+			div~p{}
+		</style>
+	</head>
+	<body>
+		<p>后代选取器匹配所有值得元素的后代元素。div p{}</p>
+		<p>与后代选择器相比，子元素选择器（Child selectors）只能选择作为某元素子元素的元素。div>p{}</p>
+		<p>相邻兄弟选择器（Adjacent sibling selector）可选择紧接在另一元素后的元素，且二者有相同父元素。div+p{}</p>
+		<p>后续兄弟选择器选取所有指定元素之后的相邻兄弟元素。div~p{}</p>
+	</body>
+</html>
