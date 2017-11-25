@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<table border="1"> <!--摘要-->
+			<caption>People</caption> <!--标题-->
+			<tr><th>name</th><th>sex</th></tr>
+			<tr><td>Anna</td><td>woman</td></tr>
+			<tr><td>Reichel</td><td>woman</td></tr>
+			<tr><td>Olive</td><td>man</td></tr>
+		</table>
+		<br /><br />
+		<table border="1">
+			<caption>rowspan:合并行；colspan:合并列</caption>
+			<tr><th>name</th><th>sex</th></tr>
+			<tr><td>Anna</td><td rowspan="2">woman</td></tr>
+			<tr><td>Reichel</td></tr>
+			<tr><td>Olive</td><td>man</td></tr>
+			<tr><td colspan="2">other</td></tr>
+		</table>
+		<br /><br />
+		<table border="1">
+			<caption>表格内插入其他</caption>
+			<tr><th>name</th><th>sex</th></tr>
+			<tr>
+				<td>
+					<ul>
+						<li>Anna</li>
+						<li>Mery</li>
+					</ul>
+				</td>
+				<td>woman</td>
+			</tr>
+			<tr>
+				<td>
+					<table border="1">
+						<tr><th>Header</th><th>Header</th></tr>
+						<tr><td>Data</td><td>Data</td></tr>
+					</table>
+				</td>
+			<td>woman</td></tr>
+			<tr><td>Olive</td><td>man</td></tr>
+		</table>
+	</body>
+</html>

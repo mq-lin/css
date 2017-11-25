@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<p>HTML 表单用于搜集不同类型的用户输入。</p>
+		<form action="" method=""> 
+			<!--action:规定当提交表单时向何处发送表单数据。
+			method:规定用于发送表单数据的 HTTP 方法。-->
+			<!--当用户单击选中该label标签时，浏览器就会自动将焦点转到和标签相关的表单控件上（就自动选中和该label标签相关连的表单控件上）。--><!--标签的 for 属性中的值应当与相关控件的 id 属性值一定要相同。-->
+			文本框：<input type="text" name="usename"/><br /><br />
+			密码框：<input type="password" name="password"/><br /><br />
+			性别:<label for="male">男</label><input type="radio" name="sex" value="male" checked="checked" id="male"/> 女<input type="radio" name="sex" value="female" /><br /><br />
+			国籍:<select name="nation"><!--multiple="multiple":下拉列表框进行多选-->
+				<optgroup label="亚洲"><option>日本</option><option>新加坡</option><option>马来西亚</option></optgroup> <!--optgroup:定义选项组-->
+				<optgroup label="美洲"><option>美国</option><option>加拿大</option><option>阿根廷</option></optgroup>
+				<optgroup label="欧洲"><option>爱尔兰</option><option>意大利</option><option>英国</option></optgroup>	
+			</select><br /><br />
+			兴趣：运动<input type="checkbox" name="interest" value="sports"/> 电影<input type="checkbox" name="interest" value="video"/> 其他<input type="checkbox" name="interest" value="other"/> <br /><br />
+			照片:<input type="file" /><br /><br />
+			个人简介:<textarea name="description"></textarea><br /><br />
+			<!--textarea: rows:行数；cols：列数。(可用width和height代替)-->
+			<input type="submit" value="注册"/><input type="reset" value="重新填写"/><br /><br />
+			<input type="button" value=":-D" />
+		</form>
+		
+		<!--在表单周围绘制一个带标题的框-->
+		<!--fieldset:定义围绕表单中元素的边框-->
+		<!--<legend> 标签为 <fieldset> 元素定义标题。-->
+			<form action="" method="post">
+				<fieldset>
+					<legend>注册会员</legend>
+					用户名：<input type="text" /><br /><br />
+					密码：<input type="password" /><br /><br />
+					<input type="submit" value="注册"/>
+					<!--image:定义图像作为提交按钮-->
+					<input type="image" src="../../images/close.jpg" alt="submit"/>
+				</fieldset>
+			</form>
+		
+		<!--hidden:定义隐藏字段，隐藏字段对于用户是不可见的。隐藏字段常常存储默认值，或者由 JavaScript 改变它们的值。-->
+		<input type="hidden" />
+	</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<p>map 标签用于客户端图像映射。图像映射指带有可点击区域的一幅图像。</p>
+		<p>img 中的 usemap 属性可引用 map 中的 id 或 name 属性（取决于浏览器）</p>
+		<p>area 元素永远嵌套在 map 元素内部。area 元素可定义图像映射中的区域。</p>
+		<p>shape:区域的形状。coords:区域的坐标。alt:区域的替代文本。href:区域的目标 URL。</p>
+		<img src="map.jpg" usemap="#planemap"/>
+		<map name="planemap" id="planemap">
+			<area shape="rect" coords="0,0,82,126" alt="map" href="http://map.baidu.com/"/>
+		</map>
+	</body>
+</html>
